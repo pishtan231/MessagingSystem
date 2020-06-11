@@ -67,9 +67,6 @@ class ReadMessage(SingleObjectMixin, View):
     model = Message
 
     def get(self, request, *args, **kwargs):
-        if not request.user.is_authenticated:
-            return HttpResponseForbidden()
-
         self.object = self.get_object()
         message = get_object_or_404(Message, id=self.object.pk)
 
