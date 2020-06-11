@@ -14,3 +14,4 @@ requests==2.23.0
 sqlparse==0.3.1
 urllib3==1.25.9
 whitenoise==5.1.0
+django_heroku==0.3.1
